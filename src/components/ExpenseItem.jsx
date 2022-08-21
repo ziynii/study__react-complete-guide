@@ -2,14 +2,14 @@ import React from 'react';
 import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
 
-const ExpenseItem = ({expense}) => {
+const ExpenseItem = ({item}) => {
 
   return (
     <div className="expense-item">
-     <ExpenseDate expense={expense}/>
+     <ExpenseDate expense={item}/>
       <div className="expense-item__description ">
-        <h2>{expense.title}</h2>
-        <div className="expense-item__price ">${expense.amount}</div>
+        <h2>{item.title}</h2>
+        <div className="expense-item__price ">${item.amount}</div>
       </div>
     </div>
   );
